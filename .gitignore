@@ -1,0 +1,9 @@
+node_modules/
+npm-debug.log*
+*.log
+.DS_Store
+Thumbs.db
+
+# 本地测量产物
+*.local.md
+measure/

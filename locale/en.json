@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Compaction Rescue",
+    "description": "Breaks the compaction dead lock at the request layer: reroutes the summarization to a wider window, slims the replayed prompt, or splits it into blocks. Never rewrites session log events."
+  }
+}

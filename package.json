@@ -1,0 +1,34 @@
+{
+  "name": "@local/compaction-rescue",
+  "version": "1.0.0",
+  "description": "Rescue DSH compaction from the output-token-cap dead lock by rewriting the summarization request at the llm/stream seam: reroute to a wider window, slim the replayed prompt, or split it into blocks. Writes no session log events.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "compaction",
+    "context-window"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+- insert:
+    - id: compaction-rescue
+      name: '@local/compaction-rescue'
+      config: {}
